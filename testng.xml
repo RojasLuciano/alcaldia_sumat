@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test Suite" verbose="1">
+	<listeners>
+		<listener class-name="com.vsysq.base.TestListener" />
+	</listeners>
+	<parameter name="browserType" value="firefox" />
+	<parameter name="appURL" value="http://simattemp.ex-cle.com/simat_web_test/servlet/hlogin" />
+
+	<test name="Admin Tests">
+		<classes>
+			<class name="test.base.test_temporal" />			
+		</classes>
+	</test>
+</suite>
